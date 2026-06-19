@@ -1,6 +1,6 @@
 # Unified AI Driven Analytics Platform 
 
-> **Building an intelligent order analysis system with IBM Bob, MCP, watsonx.data, Confluent Kafka, and Astra DB**
+> **Building an intelligent order analysis system with IBM Bob, MCP, watsonx.data, Confluent, and Astra DB**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
