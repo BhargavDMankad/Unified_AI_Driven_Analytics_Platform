@@ -220,13 +220,13 @@ ai-order-intelligence/
 ├── LICENSE                      # MIT License
 ├── .gitignore                   # Git ignore rules
 │
-├── docs/                        # 📚 Documentation
+├── docs/                        # Documentation
 │   ├── agentic-architecture.md  # Architecture deep dive
 │   ├── data-model.md            # Data model documentation
 │   ├── sequence-flow.md         # Sequence diagrams
 │   └── demo.md                  # Live demo script (15-20 min)
 │
-├── src/                         # 💻 Source Code
+├── src/                         # Source Code
 │   ├── mcp-server/              # MCP Server (Query Layer)
 │   │   ├── server.py            # Main MCP server
 │   │   ├── .env.example         # Environment template
@@ -248,12 +248,12 @@ ai-order-intelligence/
 │       └── runbooks/                     # Runbook PDFs
 │           └── pdfs/                     # 6 PDF documents
 │
-├── .bob/                        # 🤖 Bob AI Configuration
+├── .bob/                        # Bob AI Configuration
 │   ├── mcp.json                 # MCP server config
 │   ├── custom_modes.yaml        # Custom modes
 │   └── rules-wxd-bob-demo/      # Demo-specific rules
 │
-└── assets/                      # 🎨 Images & Diagrams
+└── assets/                      # Images & Diagrams
     ├── architecture diagrams    # .drawio files
     └── screenshots              # Demo screenshots
 ```
@@ -266,7 +266,7 @@ ai-order-intelligence/
 - **`src/demo-data/`** - Scripts to load demo data and runbooks
 - **`.bob/`** - Bob AI configuration for natural language queries
 
-## 🎬 Demo Scenario
+## Demo Scenario
 
 The demo uses **Order O-10452** as the anchor scenario:
 
@@ -282,14 +282,14 @@ The demo uses **Order O-10452** as the anchor scenario:
 3. **Procedures**: "What's our procedure for handling PLATINUM customer delays?"
 4. **Complete Analysis**: "Why is order O-10452 delayed, and what should we do about it according to our runbooks?"
 
-## 🔧 Configuration
+## Configuration
 
 ### MCP Server (.env)
 
 ```bash
 # Presto/watsonx.data Connection
 PRESTO_HOST=your-wxd-instance.cloud.ibm.com
-PRESTO_PORT=8443
+PRESTO_PORT=0000
 PRESTO_USER=your-username
 PRESTO_PASSWORD=your-password
 PRESTO_CATALOG=icebergdefault
@@ -300,14 +300,14 @@ ASTRA_DB_ID=your-db-id
 ASTRA_DB_REGION=your-region
 ASTRA_DB_TOKEN=your-token
 ASTRA_DB_KEYSPACE=your-keyspace
-ASTRA_DB_TABLE=runbooks_vector
+ASTRA_DB_TABLE==
 ```
 
 ### Kafka Streaming (optional)
 
 ```bash
 # Confluent Cloud
-KAFKA_BOOTSTRAP_SERVERS=your-broker:9092
+KAFKA_BOOTSTRAP_SERVERS=your-broker:0000
 KAFKA_SASL_USERNAME=your-api-key
 KAFKA_SASL_PASSWORD=your-api-secret
 ```
