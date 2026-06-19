@@ -365,34 +365,6 @@ KAFKA_SASL_PASSWORD=your-api-secret
 - **[src/mcp-server/README.md](src/mcp-server/README.md)** - MCP server documentation
 - **[src/kafka-streaming/confluent-to-lakehouse-guide.md](src/kafka-streaming/confluent-to-lakehouse-guide.md)** - Streaming guide
 
-## Contributing
-
-This is a demo project showcasing AI-powered enterprise data analysis. Feel free to:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Acknowledgments
-
-- **IBM watsonx.data** team for the platform
-- **Anthropic** for Claude LLM
-- **Model Context Protocol** community
-- **Confluent** for Kafka platform
-- **DataStax** for Astra DB
-
-
----
-
-**Built by the IBM watsonx.data team**
-
-*Demonstrating the power of unified data platforms for AI-powered analytics*
-
 ---
 
 ## Next Steps
