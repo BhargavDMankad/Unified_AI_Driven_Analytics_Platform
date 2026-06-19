@@ -19,15 +19,10 @@ kubectl port-forward -n wxd svc/ibm-lh-presto-svc 8443:8443 8481:8481
 
 If `8443` is already in use on your laptop, use a different local port (example `19443`) and set `PRESTO_PORT=19443` in your `.env`:
 
-```bash
-# Alternative local ports
-kubectl port-forward -n wxd svc/ibm-lh-presto-svc 19443:8443 18481:8481
-```
-
 Verify Presto is reachable:
 
 ```bash
-curl -sk -u "ibmlhadmin:password" https://127.0.0.1:8443/v1/info
+curl -sk -u "ibmlhadmin:password" https://<host>:<port>/v1/info
 ```
 
 ## Configuration
