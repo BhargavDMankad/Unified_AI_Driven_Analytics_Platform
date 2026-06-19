@@ -6,25 +6,6 @@ This MCP server exposes **read-only Presto tools** (e.g. `execute_select`, `list
 
 It connects to Presto using **HTTPS + Basic authentication** and is intended for **IBM Project Bob** (`.bob/mcp.json`) or **Cursor** (MCP settings) with stdio transport.
 
-## Prerequisites
-
-- A running watsonx.data Developer Edition on Kubernetes (namespace `wxd`)
-- Port-forward enabled to the Presto service (default local port `8443`)
-
-Example (run in a separate terminal and keep it running):
-
-```bash
-kubectl port-forward -n wxd svc/ibm-lh-presto-svc 8443:8443 8481:8481
-```
-
-If `8443` is already in use on your laptop, use a different local port (example `19443`) and set `PRESTO_PORT=19443` in your `.env`:
-
-Verify Presto is reachable:
-
-```bash
-curl -sk -u "ibmlhadmin:password" https://<host>:<port>/v1/info
-```
-
 ## Configuration
 
 Copy `.env.example` to `.env` and adjust as needed:
